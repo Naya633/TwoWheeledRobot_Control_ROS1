@@ -1,0 +1,13 @@
+<launch>
+
+  <node name="Camera_node" pkg="hw1" type="Camera_executable" output="screen" args="50 100" />
+
+ 
+  <node name="Robot_node" pkg="hw1" type="Robot_executable" output="screen" />
+
+
+  <node name="Controller_node" pkg="hw1" type="Controller.py" output="screen" />
+
+
+  <node name="Interface_node" pkg="hw1" type="Interface.py" output="screen" />
+</launch>
